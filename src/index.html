@@ -9,11 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles/main.css">
+
+<!--Referenciando Pagina de estilo-->
 <link rel="stylesheet" href="./styles/reset.css">
+
+<!--iCONE-->
+
+<link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon">
+
+    <title> Jogo do Detona Ralph</title>
 </head>
 
 <body>
     <div class="container">
+        <!-- INICIO MENU -->
+
         <div class="menu">
             <div class="menu-time">
                 <h2 style="color: #ff0000;">Pontuação</h2>
@@ -24,7 +34,8 @@
                 <h2>x<span id="lives">5</span></h2>
             </div>
         </div>
-
+        <!-- FIM do MENU-->
+        <!--Começo do Painel-->
         <div class="panel">
             <div class="panel-row">
                 <div class="square enemy" id="1"></div>
@@ -44,10 +55,14 @@
                 </div>
             </div>
 
+            <!--Fim do Painel-->
+
             <div class="audio">
                 <audio loop="true" autoplay="true" src="./audio/theme.mp3" controls> O seu navegador não suporta o elemento do audio</audio>
             </div>
         </div>
+
+        <!--Referencia do Javascripts-->
             <script defer src="./scripts/engine.js"></script>
 
     </div>
