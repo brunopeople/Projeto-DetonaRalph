@@ -1,71 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+<head> 
+    <!-- Configuração -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo do Detona Ralph</title>
-
+    <!-- Adicionada a fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles/main.css">
-
-<!--Referenciando Pagina de estilo-->
-<link rel="stylesheet" href="./styles/reset.css">
-
-<!--iCONE-->
-
-<link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon">
-
-    <title> Jogo do Detona Ralph</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Detona Ralph</title>
+    <!-- adicionando a folha de estilo -->
+    <link rel="stylesheet" href="./styles/reset.css">  
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- INICIO MENU -->
 
+    <!-- MENU -->
+    <div class="container">
         <div class="menu">
             <div class="menu-time">
-                <h2 style="color: #ff0000;">Pontuação</h2>
+                <h2 style="color:red;">Tempo</h2>
                 <h2 id="time-left">0</h2>
             </div>
+
+        <!--Pontuação-->
+            <div class="menu-score">
+                <h2 style="color:red;">Sua Pontuação</h2>
+                <h2 id="score">0</h2>
+            </div>
             <div class="menu-lives">
-                <img src="./imagens/player.png" alt="foto do jogador" height="60px"/>
-                <h2>x<span id="lives">5</span></h2>
+                <img src="./assets/images/player.png" alt="player photo" height="60px">
+                <h2>x3</h2>
             </div>
         </div>
-        <!-- FIM do MENU-->
-        <!--Começo do Painel-->
+        
+        <!--Painel-->
         <div class="panel">
             <div class="panel-row">
                 <div class="square enemy" id="1"></div>
                 <div class="square" id="2"></div>
                 <div class="square" id="3"></div>
             </div>
-
             <div class="panel-row">
                 <div class="square" id="4"></div>
                 <div class="square" id="5"></div>
                 <div class="square" id="6"></div>
-
-                <div class="panel-row">
-                    <div class="square" id="7"></div>
-                    <div class="square" id="8"></div>
-                    <div class="square" id="9"></div>
-                </div>
             </div>
-
-            <!--Fim do Painel-->
-
-            <div class="audio">
-                <audio loop="true" autoplay="true" src="./audio/theme.mp3" controls> O seu navegador não suporta o elemento do audio</audio>
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
             </div>
         </div>
-
-        <!--Referencia do Javascripts-->
-            <script defer src="./scripts/engine.js"></script>
-
+        
     </div>
-    
+
+
+
+
+    <!-- referenciando o arquivo javascript -->
+    <script defer src="./scripts/engine.js"></script>
 </body>
 </html>
